@@ -66,6 +66,9 @@ docker compose build
 
 # Démarrer les conteneurs
 docker compose up -d
+
+# Installer les dépendances ccomposer
+docker compose exec wordpress composer install
 ```
 
 ### 5. Accéder au site
