@@ -67,7 +67,7 @@ docker compose build
 # Démarrer les conteneurs
 docker compose up -d
 
-# Installer les dépendances ccomposer
+# Installer les dépendances composer
 docker compose exec wordpress composer install
 ```
 
@@ -199,7 +199,7 @@ Ce projet inclut une **GitHub Action** qui déploie automatiquement votre code s
 
 ### Ce que fait la GitHub Action
 
-1. Installe PHP 8.2 et Node.js 20
+1. Installe PHP 8.5 et Node.js 24
 2. Installe les dépendances Composer (`composer install`)
 3. Installe les dépendances npm du thème (`npm install`)
 4. Compile les assets du thème (`npm run build`)

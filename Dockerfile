@@ -1,4 +1,4 @@
-FROM php:8.2-fpm
+FROM php:8.5-fpm
 
 # Installer les dépendances système nécessaires
 RUN apt-get update && apt-get install -y \
@@ -23,7 +23,7 @@ mv composer.phar /usr/local/bin/composer
 
 
 # Installer Node.js LTS + npm
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - \
     && apt-get install -y nodejs
 
 # Définir le répertoire de travail
