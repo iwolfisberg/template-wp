@@ -25,7 +25,7 @@ class Handler extends LumberjackHandler
         // Provide a customisable error rendering when not in debug mode
         try {
             if (Config::get('app.debug') === false) {
-                $data = Timber::get_context();
+                $data = Timber::context();
                 $data['exception'] = $e;
 
                 return new TimberResponse('templates/errors/whoops.twig', $data, 500);

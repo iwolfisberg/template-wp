@@ -80,7 +80,7 @@ Une fois Docker lancé, vous avez accès à :
 | Site WordPress  | http://localhost:8000             | Votre site                             |
 | Admin WordPress | http://localhost:8000/wp/wp-admin | Back-office                            |
 | phpMyAdmin      | http://localhost:8080             | Gestion de la base de données          |
-| Mailhog         | http://localhost:8025             | Intercepteur d'emails (pour les tests) |
+| Mailpit         | http://localhost:8025             | Intercepteur d'emails (pour les tests) |
 
 ---
 

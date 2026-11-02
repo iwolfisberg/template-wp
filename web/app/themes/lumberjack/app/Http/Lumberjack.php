@@ -3,8 +3,7 @@
 namespace App\Http;
 
 use Rareloop\Lumberjack\Http\Lumberjack as LumberjackCore;
-use App\Menu\Menu;
-use Timber;
+use Timber\Timber;
 
 class Lumberjack extends LumberjackCore
 {

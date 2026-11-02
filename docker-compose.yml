@@ -24,7 +24,7 @@ services:
       - wordpress
 
   db:
-    image: mariadb:11.5
+    image: mariadb:11.8
     environment:
       MYSQL_DATABASE: ${DB_NAME}
       MYSQL_USER: ${DB_USER}
@@ -43,9 +43,9 @@ services:
     depends_on:
       - db
 
-  mailhog:
-    image: mailhog/mailhog
-    container_name: wp_mailhog
+  mailpit:
+    image: axllent/mailpit
+    container_name: wp_mailpit
     ports:
       - "8025:8025" # Interface web
       - "1025:1025" # Port SMTP

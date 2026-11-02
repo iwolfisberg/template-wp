@@ -6,7 +6,6 @@
 /web/wp
 /web/app/uploads
 /web/app/cache
-/vendor
 /web/app/debug.log
 
 # THEME files

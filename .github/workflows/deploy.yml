@@ -27,7 +27,7 @@ jobs:
           tools: composer
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "24"
 
@@ -87,7 +87,7 @@ jobs:
             --exclude="composer.json" \
             --exclude="composer.lock" \
             --exclude="web/.htaccess" \
-            --exclude="web/app/theme/mon-theme/package*.json" \
-            --exclude="web/app/theme/mon-theme/node_modules/" \
+            --exclude="web/app/themes/mon-theme/package*.json" \
+            --exclude="web/app/themes/mon-theme/node_modules/" \
             --exclude="web/app/uploads" \
             ./ $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH
